@@ -8,7 +8,6 @@ function NavBar() {
   };
   const [isScrolled, setIsScrolled] = useState(false);
   const [changeColor, setChangeColor] = useState(false);
-
   const checkScroll = () => {
     if (window.scrollY >= 40) {
       setIsScrolled(true);
@@ -16,7 +15,7 @@ function NavBar() {
       setIsScrolled(false);
     }
 
-    if (window.scrollY >= 650 && window.scrollY <= 1535 || window.scrollY >= 2328) {
+    if (window.scrollY >= 650 && window.scrollY <= 1535 || window.scrollY >= 2328 && window.scrollY <= 2793) {
       setChangeColor(true);
     } else {
       setChangeColor(false);
@@ -42,7 +41,7 @@ function NavBar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
             >
               Home
             </Link>
@@ -54,7 +53,7 @@ function NavBar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
             >
               About me
             </Link>
@@ -66,7 +65,7 @@ function NavBar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
             >
               Projects
             </Link>
@@ -78,9 +77,21 @@ function NavBar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
             >
               Certifications
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="section5"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              Contact me
             </Link>
           </li>
         </ul>

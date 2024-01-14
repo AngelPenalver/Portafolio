@@ -8,7 +8,6 @@ import About from "./views/About/About";
 import Projects from "./views/Projects/Projects";
 import Social from "./assets/MenuSocial/MenuSocial";
 import Contact from "./views/Contact/Contact";
-import toastr from 'toastr'
 import Error from "./views/Error/Error";
 
 function App() {
@@ -16,16 +15,14 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   if (windowWidth <= 1024) {
-    return (
-      <Error/>
-    )
+    return <Error />;
   }
 
   return (
@@ -36,24 +33,36 @@ function App() {
 }
 
 function MiApp() {
-
-  toastr.options = {
-    "closeButton": true,
-    "debug": true,
-    "newestOnTop": false,
-    "progressBar": true,
-    "positionClass": "toast-top-full-width",
-    "preventDuplicates": true,
-    "showDuration": 300,
-    "hideDuration": 1000,
-    "timeOut": 2000,
-    "extendedTimeOut": 1000,
-    "showEasing": "swing",
-    "hideEasing": "linear",
-    "showMethod": "fadeIn",
-    "hideMethod": "fadeOut"
-  }
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const section1 = document.getElementById('section1');
+      const section2 = document.getElementById('section2');
+      const section3 = document.getElementById('section3');
+      const section4 = document.getElementById('section4');
+      const section5 = document.getElementById('section5');
+
+      if (section1 && scrollPosition < section1.offsetTop) {
+        window.history.replaceState(null, `${null}`, '/Home');
+      } else if (section2 && scrollPosition < section2.offsetTop) {
+        window.history.replaceState(null, `${null}`, '/About_me');
+      } else if (section3 && scrollPosition < section3.offsetTop) {
+        window.history.replaceState(null, `${null}`, '/Projects');
+      } else if (section4 && scrollPosition < section4.offsetTop) {
+        window.history.replaceState(null, `${null}`, '/Certifications');
+      } else if (section5) {
+        window.history.replaceState(null, `${null}`, '/Contact_me');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   useEffect(() => {
     const element = document.getElementById(location.hash.replace("#", ""));
@@ -64,6 +73,8 @@ function MiApp() {
         top: element.offsetTop,
       });
     }
+    console.log(window.scrollY);
+
   }, [location]);
   return (
     <div>
@@ -82,8 +93,7 @@ function MiApp() {
         <Certifications />
       </div>
       <div id="section5">
-        <Contact/>
-
+        <Contact />
       </div>
     </div>
   );
