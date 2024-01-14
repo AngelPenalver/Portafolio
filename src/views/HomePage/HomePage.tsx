@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styles from "./HomePage.module.css";
 import Node from "./nodejs.png";
 import React from "./react.png";
