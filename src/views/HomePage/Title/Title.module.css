@@ -1,0 +1,14 @@
+.letra {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.4s ease;
+  color: #3d3fce;
+}
+.letra:hover {
+  /* color: black; */
+  text-shadow: #3d3fce -1px 2px 20px;
+}
+.contain{
+  display: flex;
+  align-items: center;
+}

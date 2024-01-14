@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('./assets/Fonts/Livvic-Regular.ttf');
+  background-image: url('./assets/Fondo/fondo1.jpg');
+  background-repeat: repeat;
+
+
+}
+*{
+  font-family: "MiFuente";
+  /* width: 100vw; */
+}
+html body{
+  /* width: 100vw; */
+  padding: 0;
+  margin: 0;
+}

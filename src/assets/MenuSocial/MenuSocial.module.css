@@ -1,0 +1,47 @@
+.container{
+  width: 10vw;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  margin: 0.4rem;
+  width: fit-content;
+  /* padding: 0.2rem; */
+  left: 0;
+}
+.banner ul {
+  list-style: none;
+  margin: 0.5rem 0rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 3vw;
+  /* height: 7vh; */
+  padding: 0;
+  /* width: 60%; */
+  background-color: #00000066 ;
+  /* border: 2px #3d3fce solid; */
+  border-radius: 5rem;
+}
+.banner li {
+  margin: 0.2rem 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0.3em 0.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.banner li:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  border-radius: 10rem;
+}
+.banner li img{
+  width: 2vw;
+  /* height: 6vh; */
+}

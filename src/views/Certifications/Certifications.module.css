@@ -1,0 +1,59 @@
+.container{
+  min-height: 100vh;
+  background: #3D3FCE;
+  background-image: url('../../assets/Fondo/fondo.png');
+  padding: 1rem 4rem;
+
+
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.contain h1{
+  font-size: 3rem;
+  padding: 0.5rem;
+  border-bottom: 2px #fff solid;
+  width: 100%;
+
+}
+.certifications{
+  display: flex;
+  align-items: center;
+}
+.certifications ul{
+  display: flex;
+}
+.certifications ul li{
+  width: 30vw;
+  height: 50vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  color: #3D3FCE;
+  border-radius: 10px;
+  border:1px #3d3fce74 solid;
+}
+
+.certifications ul li img{
+  width: 25vw;
+  height: 35vh;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: 1px #3d3fce80 solid;
+
+}
+.experience{
+  margin: 1rem;
+}
+.experience ul li{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #3D3FCE;
+}
