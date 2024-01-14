@@ -64,7 +64,7 @@ function HomePage() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/angel-pe%C3%B1alver-926bba268/"
+                href="https://www.linkedin.com/in/%C3%A1ngel-pe%C3%B1alver-926bba268/"
                 title="Ir a LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
