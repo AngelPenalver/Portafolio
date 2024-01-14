@@ -11,21 +11,6 @@ import WhatsApp from "./icons_banner/whatsapp.png";
 import Mail from "./icons_banner/mail.png";
 
 function HomePage() {
-  const [active, setActive] = useState(false);
-  const checkScroll = () => {
-    if (window.scrollY >= 470) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", checkScroll);
-    return () => {
-      window.removeEventListener("scroll", checkScroll);
-    };
-  }, []);
 
   return (
     <div className={styles.div}>
@@ -59,20 +44,14 @@ function HomePage() {
         </div>
         <p
           id={styles.subtitle}
-          className={
-            active
-              ? "animate__animated animate__bounceOutRight"
-              : "animate__animated animate__bounceInRight"
+          className={"animate__animated animate__bounceInRight"
           }
         >
           Full Stack Developer
         </p>
         <div className={styles.banner} style={{ position: "sticky" }}>
           <ul
-            className={
-              active
-                ? "animate__animated animate__bounceOutRight"
-                : "animate__animated animate__bounceInRight"
+            className={"animate__animated animate__bounceInRight"
             }
           >
             <li>
