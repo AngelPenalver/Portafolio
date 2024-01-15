@@ -10,18 +10,17 @@ import WhatsApp from "./icons_banner/whatsapp.png";
 import Mail from "./icons_banner/mail.png";
 
 function HomePage() {
-
   return (
     <div className={styles.div}>
       <div className={styles.contain}>
-        <div
-          className={`${styles.box1} animate__animated animate__backInLeft`}
-        >
+        <div className={`${styles.box1} animate__animated animate__backInLeft`}>
           <div className={styles.box1_Content}>
             <img src={CSS} alt="CSS" />
           </div>
         </div>
-        <div className={`${styles.box2} animate__animated animate__bounceInRight`}>
+        <div
+          className={`${styles.box2} animate__animated animate__bounceInRight`}
+        >
           <div className={styles.box2_Content}>
             <img src={React} alt="React" />
           </div>
@@ -43,16 +42,12 @@ function HomePage() {
         </div>
         <p
           id={styles.subtitle}
-          className={"animate__animated animate__bounceInRight"
-          }
+          className={"animate__animated animate__bounceInRight"}
         >
           Full Stack Developer
         </p>
         <div className={styles.banner} style={{ position: "sticky" }}>
-          <ul
-            className={"animate__animated animate__bounceInRight"
-            }
-          >
+          <ul className={"animate__animated animate__bounceInRight"}>
             <li>
               <a
                 href="https://github.com/AngelPenalver"
@@ -95,8 +90,24 @@ function HomePage() {
           </ul>
         </div>
         <div className={`${styles.btns} animate__animated animate__bounceInUp`}>
-          <button>Descargar CV Español</button>
-          <button>Descargar CV Ingles</button>
+          <button>
+            <a
+              href="https://drive.usercontent.google.com/download?id=14h151WyAK26muEPUmCMZhXynerIEgeGF&export=download&authuser=0&confirm=t&uuid=bdf384a7-2c84-4cd7-ad2d-05c991fc190f&at=APZUnTV5oRKKv1Ircqh-X5ghBo0O:1705339232744"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV English
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://drive.usercontent.google.com/download?id=1oY2m58fmqYLUIwyDaogyVdIJfkIWdFel&export=download&authuser=0&confirm=t&uuid=3016eddb-1c8f-4547-85fb-13b1d5b6f95f&at=APZUnTVqqlkZRJCPFMewEK0OT0gU:1705339448807"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV Spanish
+            </a>
+          </button>
         </div>
       </div>
     </div>

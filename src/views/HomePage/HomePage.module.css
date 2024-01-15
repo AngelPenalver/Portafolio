@@ -257,6 +257,10 @@ animation: rotacion 8s infinite linear;
   cursor: pointer;
   transition: .3s;
 }
+.btns button a{
+  text-decoration: none;
+  color: #fff;
+}
 
 .btns button:hover{
   background-color: #3d3fceb1;
