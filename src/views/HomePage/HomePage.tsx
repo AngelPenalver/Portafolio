@@ -92,7 +92,7 @@ function HomePage() {
         <div className={`${styles.btns} animate__animated animate__bounceInUp`}>
           <button>
             <a
-              href="https://drive.usercontent.google.com/download?id=14h151WyAK26muEPUmCMZhXynerIEgeGF&export=download&authuser=0&confirm=t&uuid=bdf384a7-2c84-4cd7-ad2d-05c991fc190f&at=APZUnTV5oRKKv1Ircqh-X5ghBo0O:1705339232744"
+              href="https://drive.usercontent.google.com/download?id=1jaBgh8KAOKr-wPOrR5HtHr8z0VRXqlr8&export=download&authuser=0&confirm=t&uuid=f1dceb22-1f03-443d-8545-c6cce4b733e4&at=APZUnTU9aD5KOzbf-EeFUmO-czG2:1712088469200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -101,7 +101,7 @@ function HomePage() {
           </button>
           <button>
             <a
-              href="https://drive.usercontent.google.com/download?id=1oY2m58fmqYLUIwyDaogyVdIJfkIWdFel&export=download&authuser=0&confirm=t&uuid=3016eddb-1c8f-4547-85fb-13b1d5b6f95f&at=APZUnTVqqlkZRJCPFMewEK0OT0gU:1705339448807"
+              href="https://drive.usercontent.google.com/download?id=1NZjdBuIYQzqReWaydInJVg3XKmeUYJUZ&export=download&authuser=0&confirm=t&uuid=fe5861d8-ace5-4a37-9b19-9a185ca5888d&at=APZUnTVrTT6a0zxFUNfMaSnOhHlt:1712088568777"
               target="_blank"
               rel="noopener noreferrer"
             >
